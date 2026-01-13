@@ -19,7 +19,7 @@
         <label>Target</label>
         <input type="text" name="target">
         <label>To Do</label>
-        <input type="text" name="To Do">
+        <input type="text" name="to_do">
         <input type="submit" value="Kirim">
     </form>
 
