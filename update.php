@@ -39,13 +39,13 @@
 
         <form method="post">
             <label>Month</label>
-            <input type="text" name="nama" value="<?= htmlspecialchars($target['bulan']); ?>" required>
+            <input type="text" name="bulan" value="<?= htmlspecialchars($target['bulan']); ?>" required>
 
             <label>Target</label>
-            <input type="text" name="kelas" value="<?= htmlspecialchars($target['capaian']); ?>" required>
+            <input type="text" name="capaian" value="<?= htmlspecialchars($target['capaian']); ?>" required>
 
             <label>To Do</label>
-            <input type="text" name="alamat" value="<?= htmlspecialchars($target['todo']); ?>" required>
+            <input type="text" name="todo" value="<?= htmlspecialchars($target['todo']); ?>" required>
 
             <input type="submit" name="update" value="Update">
         </form>
