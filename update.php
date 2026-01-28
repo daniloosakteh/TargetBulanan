@@ -21,12 +21,12 @@
 
     // proses update
     if (isset($_POST['update'])) {
-        $month = $_POST['month'];
-        $target = $_POST['target'];
-        $to_do = $_POST['to_do'];
+        $bulan = $_POST['bulan'];
+        $capaian = $_POST['capaian'];
+        $todo = $_POST['todo'];
 
         mysqli_query($koneksi, "UPDATE tbtarget_bulanan 
-        SET month='$month', target='$target', to_do='$to_do' 
+        SET bulan='$bulan', capaian='$capaian', todo='$todo' 
         WHERE id='$id'");
 
         header("Location: view-data.php");
@@ -39,13 +39,13 @@
 
         <form method="post">
             <label>Month</label>
-            <input type="text" name="nama" value="<?= htmlspecialchars($target['month']); ?>" required>
+            <input type="text" name="nama" value="<?= htmlspecialchars($target['bulan']); ?>" required>
 
             <label>Target</label>
-            <input type="text" name="kelas" value="<?= htmlspecialchars($target['target']); ?>" required>
+            <input type="text" name="kelas" value="<?= htmlspecialchars($target['capaian']); ?>" required>
 
             <label>To Do</label>
-            <input type="text" name="alamat" value="<?= htmlspecialchars($target['to_do']); ?>" required>
+            <input type="text" name="alamat" value="<?= htmlspecialchars($target['todo']); ?>" required>
 
             <input type="submit" name="update" value="Update">
         </form>
