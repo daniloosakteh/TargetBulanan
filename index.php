@@ -15,11 +15,11 @@
     <!-- form inputan -->
     <form action="prosesinput.php" method="post">
         <label>Month</label>
-        <input type="text" name="month">
+        <input type="text" name="bulan">
         <label>Target</label>
-        <input type="text" name="target">
+        <input type="text" name="capaian">
         <label>To Do</label>
-        <input type="text" name="to_do">
+        <input type="text" name="todo">
         <input type="submit" value="Kirim">
     </form>
 
