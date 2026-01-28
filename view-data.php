@@ -40,9 +40,9 @@
                     <tbody>
                         <?php while ($row = mysqli_fetch_assoc($result)): ?>
                             <tr>
-                                <td><?= htmlspecialchars($row['month']); ?></td>
-                                <td><?= htmlspecialchars($row['target']); ?></td>
-                                <td><?= htmlspecialchars($row['to_do']); ?></td>
+                                <td><?= htmlspecialchars($row['bulan']); ?></td>
+                                <td><?= htmlspecialchars($row['capaian']); ?></td>
+                                <td><?= htmlspecialchars($row['todo']); ?></td>
                                 <!-- tombol hapus data tanpa konfirmasi -->
                                 <td>
                                     <a href="hapus.php?id=<?= urlencode($row['id']); ?>">Hapus</a>
