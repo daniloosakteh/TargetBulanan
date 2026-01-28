@@ -80,13 +80,13 @@ include 'config.php';
 
     <form action="prosesinput.php" method="post">
         <label>Month</label>
-        <input type="text" name="bulan" placeholder="Contoh: Januari">
+        <input type="text" name="bulan" placeholder="Contoh: Januari" required>
 
         <label>Target</label>
-        <input type="text" name="capaian" placeholder="Masukkan target">
+        <input type="text" name="capaian" placeholder="Masukkan target" required>
 
         <label>To Do</label>
-        <input type="text" name="todo" placeholder="Rencana kegiatan">
+        <input type="text" name="todo" placeholder="Rencana kegiatan" required>
 
         <input type="submit" value="Simpan Data">
     </form>
