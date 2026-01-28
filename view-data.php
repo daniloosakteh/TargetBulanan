@@ -46,7 +46,7 @@
                                 <!-- tombol hapus data tanpa konfirmasi -->
                                 <td>
                                     <a href="hapus.php?id=<?= urlencode($row['id']); ?>">Hapus</a>
-                                    <a href="update.php?id=<?= urlencode($row['id']); ?>">Edit</a> 
+                                    <a href="update.php?id=<?= urlencode($row['id']); ?>">Update</a> 
                                 </td>
                             </tr>
                         <?php endwhile; ?>
