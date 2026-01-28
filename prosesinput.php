@@ -3,12 +3,12 @@
 include 'config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $month = $_POST['month'];
-    $target = $_POST['target'];
-    $to_do = $_POST['to_do'];
+    $bulan = $_POST['bulan'];
+    $capaian = $_POST['capaian'];
+    $todo = $_POST['todo'];
 
     // insert data ke database
-    $sql = "INSERT INTO tbtarget_bulanan (month, target, to_do) VALUES ('$month', '$target', '$to_do')";
+    $sql = "INSERT INTO tbtarget_bulanan (bulan, capaian, todo) VALUES ('$bulan', '$capaian', '$todo')";
     $result = mysqli_query($koneksi, $sql);
 
     // Tutup koneksi
